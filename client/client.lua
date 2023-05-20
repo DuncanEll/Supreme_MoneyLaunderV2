@@ -180,8 +180,9 @@ Citizen.CreateThread(function()
 
         if IsControlJustPressed(0, 153) and (dist < 1) then
             LeaveMoneyLaunder()
+            lib.hideTextUI()
         end
-end
+    end
 end)
 
 RegisterNetEvent('supreme_moneylaunder:GoToMoneyLaunder')
